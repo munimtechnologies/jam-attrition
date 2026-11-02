@@ -11,6 +11,12 @@ than top-ranked ones (9.8% vs 1.8% of rank slots). All 6 pre-registered predicti
 [RESULTS.md](RESULTS.md). Predictions, written before any data was read:
 [PREREGISTRATION.md](PREREGISTRATION.md).
 
+**Next (pre-registered 2 November 2026):** the same 1,352 jams will be read again about one month
+later (early December 2026) and six months later (May 2027), to measure directly how fast entries leave
+a jam's results. The measure compares how many entries are listed then and now, so it also sees losses
+at the very bottom of a list and does not depend on rank numbers. Predictions:
+[PREREGISTRATION-reread.md](PREREGISTRATION-reread.md); code: `reread.py`.
+
 ## The idea in one example
 
 itch.io keeps a finished jam's original rank numbers. When an entry's game is deleted or taken out of
@@ -24,10 +30,13 @@ count this for any ranked jam.
     python -m unittest -v
     python jam_attrition.py --out out            # about 2,000 jams, about 1 request per second
     python jam_attrition.py --from-csv data/jams.csv --read-at "2026-11-01 20:11:01" --out out   # re-grade
+    python reread.py --label r1 --out out        # re-read the 1,352 jams of data/jams.csv (about 45 minutes)
 
 Outputs: `out/summary.json` (counts, cohort shares, intervals and the graded predictions),
 `out/jams.csv` (one row per jam: slug, dates, N0, L, V) and `out/ranks.jsonl` (the rank numbers read).
-The 1 November 2026 read is in `data/`. No game, author or entry is named or stored.
+The re-read writes `out/now.csv`, `out/compare.csv` (one row per jam: L then and now, D) and
+`out/summary-r1.json`. The 1 November 2026 read is in `data/`. No game, author or entry is named or
+stored.
 
 ## Licence
 
