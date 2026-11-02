@@ -1,0 +1,143 @@
+{
+ "version": "0.1.0",
+ "read_at_utc": "2026-11-01 20:11:01",
+ "frame_jams": 1472,
+ "status_counts": {
+  "http_404": 1,
+  "inconsistent": 2,
+  "no_ranks": 77,
+  "ok": 1387,
+  "tie_span": 5
+ },
+ "reader_check": {
+  "results_pages_read": 1471,
+  "unusable": 2,
+  "unusable_share": 0.0014,
+  "n0_above_rated": 0
+ },
+ "eligible_jams": 1352,
+ "eligible_entries_n0": 211101,
+ "eligible_vanished": 7166,
+ "overall": {
+  "pooled": 0.0339,
+  "ci95": [
+   0.0315,
+   0.0366
+  ]
+ },
+ "cohorts": {
+  "lt1": {
+   "jams": 246,
+   "n0": 35350,
+   "vanished": 535,
+   "pooled": 0.0151,
+   "ci95": [
+    0.0125,
+    0.0185
+   ],
+   "median_jam_share": 0.0157,
+   "jams_with_any_vanished": 174,
+   "live_count_below_rated": 118
+  },
+  "1to2": {
+   "jams": 234,
+   "n0": 31273,
+   "vanished": 737,
+   "pooled": 0.0236,
+   "ci95": [
+    0.0207,
+    0.0271
+   ],
+   "median_jam_share": 0.02,
+   "jams_with_any_vanished": 178,
+   "live_count_below_rated": 126
+  },
+  "2to3": {
+   "jams": 204,
+   "n0": 33330,
+   "vanished": 956,
+   "pooled": 0.0287,
+   "ci95": [
+    0.0233,
+    0.0353
+   ],
+   "median_jam_share": 0.0299,
+   "jams_with_any_vanished": 174,
+   "live_count_below_rated": 107
+  },
+  "3to5": {
+   "jams": 343,
+   "n0": 54955,
+   "vanished": 2237,
+   "pooled": 0.0407,
+   "ci95": [
+    0.0364,
+    0.0464
+   ],
+   "median_jam_share": 0.0395,
+   "jams_with_any_vanished": 304,
+   "live_count_below_rated": 272
+  },
+  "ge5": {
+   "jams": 325,
+   "n0": 56193,
+   "vanished": 2701,
+   "pooled": 0.0481,
+   "ci95": [
+    0.0427,
+    0.0537
+   ],
+   "median_jam_share": 0.046,
+   "jams_with_any_vanished": 312,
+   "live_count_below_rated": 301
+  }
+ },
+ "p1_diff_ge5_minus_lt2": {
+  "diff": 0.029,
+  "ci95": [
+   0.023,
+   0.0352
+  ]
+ },
+ "p4_spearman_age_share": {
+  "jams": 1279,
+  "rho": 0.435,
+  "p_one_sided": 0.0005
+ },
+ "p5_old_jams_any_vanished": {
+  "k": 312,
+  "n": 325,
+  "share": 0.96,
+  "wilson95": [
+   0.9328,
+   0.9765
+  ]
+ },
+ "p6_bottom_vs_top": {
+  "jams": 695,
+  "bottom": 0.0977,
+  "top": 0.0179,
+  "diff": 0.0799,
+  "ci95": [
+   0.0721,
+   0.0881
+  ]
+ },
+ "exploratory_yearly_rate": 0.0089,
+ "grades": {
+  "P1": "held",
+  "P2": "held",
+  "P3": "held",
+  "P4": "held",
+  "P5": "held",
+  "P6": "held"
+ },
+ "frame": {
+  "listing_url": "https://itch.io/jams/past?page=N",
+  "listing_pages_read": 40,
+  "slugs": 1965,
+  "with_results_link": 1472,
+  "read": 1472
+ },
+ "requests": 2956
+}
